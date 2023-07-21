@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* ----------------------HOME SECTION-------------------------- */
+
+.home {
+  max-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4em;
+  align-items: center;
+}
+
+.home-content {
+  max-width: 100%;
+  margin-top: 20%;
+}
+
+.myName {
+  font-size: var(--big-font);
+  font-weight: 700;
+
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.word-wave span {
+  position: absolute;
+  color: #fff;
+
+  transform: translate(-50%, -50%);
+
+  margin-left: 140px;
+  margin-top: -12px;
+}
+
+.word-wave span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.3px #12f7ff;
+}
+
+.word-wave span:nth-child(2) {
+  color: #3bd9d9;
+  -webkit-text-stroke: 1px #12f7ff;
+  animation: wave 2.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.change-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.change-text h3 {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+.change-text h3 .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+
+.change-text h3 .word .letter {
+  transform-origin: center center 25px;
+}
+
+.change-text h3 .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.change-text h3 .word .letter.in {
+  transition: 0.38s ease;
+}
+
+.change-text h3 .word .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.home-content p {
+  color: #bdbdbd;
+  line-height: 1.6;
+
+  max-width: 80%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.info-box {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin: 1rem 0 2rem;
+  padding-top: 20px;
+  grid-gap: 2rem;
+}
+
+/* .mail {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 1rem 0 2 rem;
+
+  padding-top: 20px;
+} */
+
+.info-box h5 {
+  font-weight: 600;
+  font-size: medium;
+  color: var(--text-color);
+}
+
+.info-box span,
+.info-box a {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bdbdbd;
+
+  padding-left: 5px;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 45px;
+
+  margin-top: 5%;
+}
+
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 100%;
+
+  background: var(--hover-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.6s;
+
+  box-shadow: var(--neon-box-shadow);
+  border-radius: 5px;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid var(--hover-color);
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--bg-color);
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.btn-box a:hover {
+  color: var(--hover-color);
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+
+.btn-box a:nth-child(2) {
+  background: var(--bg-color);
+  color: var(--hover-color);
+}
+
+.btn-box a:nth-child(2):hover {
+  color: var(--bg-color);
+}
+
+.btn-box a:nth-child(2)::before {
+  background: var(--hover-color);
+}
+
+.btn-box a:active,
+button:active {
+  transform: scale(10%, 10%);
+
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+.home-image {
+  position: relative;
+
+  margin-top: 15%;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img:nth-child(1) {
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+  filter: blur(50px);
+  z-index: -1;
+  position: absolute;
+  top: 3%;
+}
+
+.image img:nth-child(2) {
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+}
+
+.blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: -10%;
+}
+
+.blob:nth-child(2) {
+  filter: blur(50px);
+}

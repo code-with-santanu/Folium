@@ -1,0 +1,200 @@
+/* *********************Break Points***************** */
+
+/* ---------------Break Point: 1------------------ */
+@media (max-width: 1000px) {
+  section {
+    padding: 50px 5%;
+  }
+
+  :root {
+    --big-font: 2.2rem;
+    --normal-font: 1.8rem;
+    --neon-box-shadow: 0 0 0.8rem #12f7ff;
+    --h2-font: 3rem;
+  }
+
+  /* header section */
+  .navlist {
+    padding: 8px 15px;
+  }
+
+  /* home section */
+  .home-content {
+    margin-top: 5rem;
+  }
+
+  /* footer */
+  footer {
+    padding: 15px 5%;
+  }
+}
+
+/* ---------------Break Point: 2------------------ */
+@media (max-width: 900px) {
+  :root {
+    --big-font: 2rem;
+    --normal-font: 1.5rem;
+    --h2-font: 2.5rem;
+  }
+
+  /* home section */
+  .change-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+/* ---------------Break Point: 3------------------ */
+@media (max-width: 800px) {
+  /* header of the page */
+  #menu {
+    display: block;
+    transition: all 0.4s ease;
+  }
+
+  #menu.bx-x {
+    transform: rotate(-180deg);
+  }
+
+  .navlist {
+    display: flex;
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    padding: 0 5%;
+    transition: all 0.45s ease;
+  }
+
+  .navlist a {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .navlist.open {
+    top: 100%;
+  }
+
+  /* Home section */
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .home-image {
+    margin-bottom: 5rem;
+  }
+
+  .liquid-shape {
+    width: 80%;
+    left: 10%;
+    top: 13%;
+  }
+
+  /* about section */
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .read-more p {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+
+  .read-more img {
+    max-height: 130px;
+  }
+
+  /* skills section */
+  .main-skill {
+    grid-template-columns: 1fr;
+  }
+
+  /* portfolio section */
+  .filter-button {
+    margin: 2.5rem 0;
+  }
+
+  /* Footer of the page */
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------------Break Point: 4------------------ */
+@media (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+
+  :root {
+    --big-font: 1.4rem;
+    --normal-font: 1.2rem;
+    --h2-font: 1.8rem;
+  }
+
+  /* Home Section */
+  .home-content {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .word-wave span {
+    margin-left: 70px;
+    margin-top: -8px;
+  }
+
+  /* About Section */
+
+  .about-img img {
+    width: 250px;
+  }
+
+  .about-img {
+    font-size: 1rem;
+  }
+
+  .about-content h1 {
+    font-size: var(--h2-font);
+  }
+
+  .about-btn {
+    float: left;
+  }
+
+  .read-more p {
+    font-size: 0.6rem;
+    font-weight: 250;
+  }
+
+  .read-more img {
+    max-height: 100px;
+  }
+
+  .back {
+    height: 20px;
+    width: 20px;
+  }
+
+  .back i {
+    font-size: 1.4rem;
+  }
+
+  /* Portfolio Section */
+  .filter-button btn {
+    font-size: 0.8rem;
+  }
+
+  /* contact section */
+  .contact {
+    min-height: 0;
+  }
+
+  /* Footer of the page */
+  footer p {
+    font-size: 0.8rem;
+  }
+}

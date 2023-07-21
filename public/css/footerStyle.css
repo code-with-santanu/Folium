@@ -1,0 +1,29 @@
+/* ---------------------- FOOTER -------------------------- */
+footer {
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: #bdbdbd;
+}
+
+footer span {
+  font-family: "Lobster", cursive;
+}
+
+footer a {
+  display: inline-flex;
+  justify-content: center;
+  color: var(--text-color);
+  background: var(--hover-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+footer a i {
+  font-size: 1rem;
+  color: var(--second-bg-color);
+}

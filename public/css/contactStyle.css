@@ -1,0 +1,95 @@
+/* ----------------------CONTACT SECTION-------------------------- */
+
+.contact {
+  max-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background: var(--second-bg-color);
+}
+
+.contact .headline {
+  text-align: center;
+}
+
+.headline head {
+  display: flex;
+}
+
+.headline head div {
+  height: 50px;
+  width: 50px;
+}
+
+.contact form {
+  text-align: center;
+  max-width: 50rem;
+  margin: 1rem auto;
+  margin-bottom: 3 rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin-bottom: 0.8rem;
+  border: none;
+  border-radius: 5px;
+
+  padding: 0.7rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.form-btn button {
+  width: 150px;
+  height: 100%;
+
+  background: var(--hover-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.6s;
+
+  box-shadow: var(--neon-box-shadow);
+  border-radius: 5px;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid var(--hover-color);
+
+  cursor: pointer;
+}
+
+.form-btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--bg-color);
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.form-btn button:hover {
+  color: var(--hover-color);
+}
+
+.form-btn button:hover::before {
+  width: 100%;
+}
