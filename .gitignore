@@ -1,4 +1,5 @@
 .vscode
 
-.firebase.json
+firebase.json
 .firebaserc
+.firebase
