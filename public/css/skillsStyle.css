@@ -102,7 +102,7 @@
 }
 
 .bar .javascript {
-  width: 50%;
+  width: 75%;
   animation: javascript 5s;
 }
 
@@ -138,7 +138,7 @@
     width: 0%;
   }
   100% {
-    width: 50%;
+    width: 75%;
   }
 }
 
