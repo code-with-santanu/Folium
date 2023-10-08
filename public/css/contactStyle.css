@@ -28,20 +28,61 @@
   margin-bottom: 3 rem;
 }
 
+.field-holder {
+  position: relative;
+  margin-bottom: 0.7em;
+}
+
+form label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 20px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 100;
+  color: rgb(96, 130, 130);
+  background-image: var(--bg-color);
+  transition: all 0.2s ease-in-out;
+}
+
 form input,
 form textarea {
   width: 100%;
   color: var(--text-color);
+  font-size: 1rem;
   background: var(--bg-color);
   margin-bottom: 0.8rem;
-  border: none;
-  border-radius: 5px;
-
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  outline: none;
   padding: 0.7rem;
+}
+
+form input {
+  height: 55px;
 }
 
 form textarea {
   resize: none;
+}
+
+form input:focus ~ label,
+form input:valid ~ label,
+form textarea:focus ~ label,
+form textarea:valid ~ label {
+  font-size: 0.9em;
+  top: -9px;
+  pointer-events: none;
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7),
+    #250821,
+    #250821,
+    #250821
+  );
 }
 
 .form-btn {

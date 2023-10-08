@@ -499,16 +499,22 @@
         method="post"
         target="_blank"
       >
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea
-          name="msg"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Messege"
-        ></textarea>
+        <div class="field-holder">
+          <input type="text" name="name" required />
+          <label for="name">Name</label>
+        </div>
+        <div class="field-holder">
+          <input type="email" name="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="field-holder">
+          <input type="text" name="subject" required />
+          <label for="subject">Subject</label>
+        </div>
+        <div class="field-holder">
+          <textarea name="msg" id="" cols="30" rows="10" required></textarea>
+          <label for="name">messege</label>
+        </div>
         <input type="hidden" name="_captcha" value="false" />
 
         <div class="form-btn btn-box">
