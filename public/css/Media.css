@@ -46,6 +46,17 @@
 
 /* ---------------Break Point: 3------------------ */
 @media (max-width: 800px) {
+  :root {
+    --bg-gradient: linear-gradient(
+      to bottom,
+      #11021f,
+      #130221,
+      #0b0312,
+      #0e0417,
+      #010003
+    );
+  }
+
   /* header of the page */
   #menu {
     display: block;
@@ -126,6 +137,17 @@
 
 /* ---------------Break Point: 4------------------ */
 @media (max-width: 500px) {
+  :root {
+    --bg-gradient: linear-gradient(
+      to bottom,
+      #11021f,
+      #130221,
+      #0b0312,
+      #0e0417,
+      #010003
+    );
+  }
+
   html {
     font-size: 80%;
   }
