@@ -2,12 +2,12 @@
 
 .loading-page {
   font-family: "Michroma", sans-serif;
-  background: linear-gradient(to right, #2c3e50, #000000);
+  background: linear-gradient(to bottom, #2c3e50, #000000);
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
