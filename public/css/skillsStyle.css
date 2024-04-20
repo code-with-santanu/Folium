@@ -106,12 +106,12 @@
 }
 
 .bar .c {
-  width: 90%;
-  animation: c 2s;
+  width: 80%;
+  animation: c 3s;
 }
 
 .bar .python {
-  width: 85%;
+  width: 80%;
   animation: python 3s;
 }
 
@@ -130,7 +130,7 @@
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -139,7 +139,7 @@
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 80%;
   }
 }
 
