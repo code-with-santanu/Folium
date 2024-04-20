@@ -158,6 +158,11 @@
     --h2-font: 1.8rem;
   }
 
+  /* Loading Page */
+  .loading-text {
+    letter-spacing: 5px;
+  }
+
   /* Home Section */
   .home-content {
     padding-left: 3%;
