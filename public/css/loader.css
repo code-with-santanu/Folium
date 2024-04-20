@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
+
+.loading-page {
+  font-family: "Michroma", sans-serif;
+  background: linear-gradient(to right, #2c3e50, #000000);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+#svg {
+  height: 200px;
+  width: 200px;
+  stroke: #fff;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 2500;
+  animation: draw 8s ease-in-out;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 2500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.loading-msg {
+  height: 100px;
+  overflow: hidden;
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
