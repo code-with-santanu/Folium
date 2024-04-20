@@ -3,7 +3,7 @@
 .loading-page {
   font-family: "Michroma", sans-serif;
   background: linear-gradient(to right, #2c3e50, #000000);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
