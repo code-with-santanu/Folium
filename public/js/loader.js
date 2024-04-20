@@ -21,3 +21,10 @@ gsap.fromTo(
     delay: 0.5,
   }
 );
+
+const loaderContainer = document.querySelector(".loading-page");
+
+// removing the loading page from dom after complete loading
+loaderContainer.addEventListener("transitionend", () => {
+  document.body.removeChild(loaderContainer);
+});
