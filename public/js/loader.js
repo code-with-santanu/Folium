@@ -21,13 +21,14 @@ window.addEventListener("load", () => {
     { opacity: 1 },
     {
       opacity: 0,
-      duration: 1.5,
+      duration: 2,
       delay: 2.5,
     }
   );
 
   // removing the loading page from dom after complete loading animation
   loaderContainer.addEventListener("animationend", () => {
+    console.log("Animation ended");
     document.body.removeChild(loaderContainer);
   });
 });

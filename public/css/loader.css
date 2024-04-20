@@ -22,7 +22,8 @@
   fill-opacity: 0;
   stroke-width: 3px;
   stroke-dasharray: 2500;
-  animation: draw 8s ease-in-out;
+  animation: draw ease-in-out;
+  animation-duration: 6s;
 }
 
 @keyframes draw {
