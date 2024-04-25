@@ -20,7 +20,7 @@
   width: 200px;
   stroke: #fff;
   fill-opacity: 0;
-  stroke-width: 3px;
+  stroke-width: 0.9px;
   stroke-dasharray: 2500;
   animation: draw ease-in-out;
   animation-duration: 6s;
