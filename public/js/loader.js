@@ -1,4 +1,6 @@
-gsap.fromTo(
+let tl = gsap.timeline();
+
+tl.fromTo(
   ".loading-text",
   {
     y: 80,
@@ -31,4 +33,28 @@ window.addEventListener("load", () => {
     console.log("Animation ended");
     document.body.removeChild(loaderContainer);
   });
+});
+
+// ***************************************** NAVBAR  *********************************************
+tl.from(".logo", {
+  y: -50,
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
+  rotate: 360,
+});
+
+tl.from(".navlist li", {
+  y: -30,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+});
+
+// ***************************************** Home *********************************************
+
+tl.from(".btn-box", {
+  y: 30,
+  opacity: 0,
+  duration: 1.5,
 });
