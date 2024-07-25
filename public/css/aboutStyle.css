@@ -21,12 +21,15 @@
 .about-img {
   max-width: 100%;
   max-height: auto;
+  border: 2px solid rgb(115, 8, 209);
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 .about-img img {
   max-width: 300px;
-  filter: drop-shadow(10px 10px 10px rgb(3, 35, 72))
-    drop-shadow(-10px 10px 10px rgb(3, 34, 69));
+  /* filter: drop-shadow(10px 8px 8px rgb(3, 35, 72))
+    drop-shadow(-10px 10px 10px rgb(3, 34, 69)); */
 }
 
 .info-about1,
