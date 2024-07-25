@@ -1,3 +1,6 @@
+// Disable scrolling
+disableScroll();
+
 let tl = gsap.timeline();
 
 tl.fromTo(
@@ -32,16 +35,21 @@ window.addEventListener("load", () => {
   loaderContainer.addEventListener("animationend", () => {
     console.log("Animation ended");
     document.body.removeChild(loaderContainer);
+
+    // reset normal scroll after page load
+    enableScroll();
   });
 });
 
 // ***************************************** NAVBAR  *********************************************
 tl.from(".logo", {
-  y: -50,
+  y: -90,
   opacity: 0,
   duration: 1,
-  delay: 0.5,
-  rotate: 360,
+  delay: 1,
+  rotate: 220,
+  // repeat: 2,
+  // yoyo: true,
 });
 
 tl.from(".navlist li", {
@@ -58,3 +66,19 @@ tl.from(".btn-box", {
   opacity: 0,
   duration: 1.5,
 });
+
+// Function to prevent scrolling while loading
+function disableScroll() {
+  // Get the current page scroll position
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+
+  // Disable scrolling by setting the onscroll event handler
+  window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+function enableScroll() {
+  window.onscroll = null;
+}
