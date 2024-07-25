@@ -238,7 +238,8 @@
 }
 
 .read-more img {
-  max-height: 190px;
+  max-height: 200px;
+  aspect-ratio: 1/1;
   box-shadow: var(--neon-box-shadow);
   outline: 2px solid var(--bg-color);
   justify-content: center;
@@ -246,11 +247,11 @@
   border-radius: 10px;
 }
 
-.read-more div:hover img {
+/* .read-more div:hover img {
   transform: scale(1.1);
 
   transition: 1s;
-}
+} */
 
 .back {
   height: 30px;
