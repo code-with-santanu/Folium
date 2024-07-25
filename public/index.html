@@ -351,19 +351,30 @@
       </div>
 
       <div class="about-content">
-        <span>Let me introduce myself</span>
+        <span class="h">Let me introduce myself</span>
         <h1>About Me...</h1>
         <p>
-          Hello, I'm Santanu Pal, student of Techno Main Salt Lake, currently
-          pursuing B.Tech in IT department. <br /><br />
-          I'm a Cloud and tech enthusiast. I am also passionate about
-          Cybersecurity and a self-motivated learner.Exploring various technical
-          skills to be a well-organized professionsal. <br /><br />
-          I'm always a way ahead to get the opportunity to learn and explore new
-          skills and improve myself.
+          <span
+            >Hello! I'm Santanu Pal, a BTech undergraduate in
+            <strong>Information Technology</strong> from TECHNO MAIN SALT LAKE.
+            <br /><br
+          /></span>
+          <span
+            >As a dedicated <strong>Java Backend Developer</strong> currently
+            working with Spring Boot, I continuously explore backend
+            technologies and <strong>microservices</strong> to build robust and
+            scalable applications. <br /><br
+          /></span>
+          <span
+            >Passionate about
+            <strong>Cloud, DevOps, Cybersecurity, and AI</strong>, I'm always a
+            way ahead to get the opportunity to learn and explore and stay
+            updated with the latest industry trends through tech articles and
+            blogs. <br /><br /><br
+          /></span>
         </p>
 
-        <div class="about-btn" onclick="setVisibility('read-more', 'flex');">
+        <div id="about-btn" class="about-btn" onclick="viewRM()">
           <div class="btn">
             <span></span>
             <span></span>
@@ -375,41 +386,48 @@
       </div>
 
       <div id="read-more" class="read-more">
-        <div class="back" onclick="setVisibility('read-more', 'none');">
+        <div class="back" onclick="hideRM()">
           <i class="bx bx-left-arrow-alt"></i>
         </div>
 
-        <div class="block">
-          <p>
-            Hi! I am Santanu Pal, a student of Information Technology
-            department. I grew up in Kolkata, West Bengal. I completed my
-            schooling from Sinthi Ramakrishna Sangha Vidyamandir. My hobbies
-            include listening music, reading story books, playing games. I
-            always love to explore new things.
+        <div id="block1" class="block">
+          <p id="sub1">
+            Greetings! I’m Santanu Pal, a driven BTech undergrad specializing in
+            IT at Techno Main Salt Lake.With a strong foundation in Java Backend
+            Development, I'm passionate about creating projects using
+            cutting-edge backend technologies, including microservices.My
+            enthusiasm for cloud computing and cybersecurity fuels my continuous
+            learning and exploration in these dynamic fields. As a DevOps
+            enthusiast, I thrive on integrating development and operations to
+            streamline workflows, automate processes, and enhance efficiency. My
+            curiosity extends to the realm of artificial intelligence, where I'm
+            eager to explore its potential and applications in backend dev.
           </p>
-          <img src="/img/about1.jpg" alt="" />
+          <img id="sub2" src="/img/about1.jpg" alt="" />
         </div>
 
-        <div class="block">
-          <img src="/img/about2.jpg" alt="" />
-          <p>
-            Currently I am pursuing B.Tech. in Information Technology from
-            Techno Main Salt Lake. I am a tech enthusiast and developing myself
-            by learning various industrial technologies. I'm always a way ahead
-            to get the opportunity to learn and explore new skills and improve
-            myself.
+        <div id="block2" class="block">
+          <img id="sub2" src="/img/about2.jpg" alt="" />
+          <p id="sub1">
+            Growing up in the vibrant city of Kolkata, West Bengal, I completed
+            my schooling at Sinthi Ramakrishna Sangha Vidyamandir. My journey in
+            technology began with a fascination for coding and has since
+            expanded to encompass a wide range of skills, including web
+            development, cloud computing, and cybersecurity. I am learning data
+            structures and algorithms and have a keen interest in network
+            pentesting and ethical hacking.
           </p>
         </div>
 
-        <div class="block">
-          <p>
-            I have experience in web development and cloud computing. I love to
-            code and I can write code using data structure and algorithm. I also
-            have interest towards Cybersecurity and I have good knowledge about
-            network pentesting and ethical hacking and want to explore more
-            about it.
+        <div id="block3" class="block">
+          <p id="sub1">
+            I am a self-motivated learner, always striving to enhance my
+            knowledge and skills. I am open to discussing technology, sharing
+            insights, and exploring collaborative opportunities in TECH World.
+            My goal is to become a well-rounded professional, constantly
+            evolving to meet the demands of the ever-changing tech landscape.
           </p>
-          <img src="/img/about3.jpg" alt="" />
+          <img id="sub2" src="/img/about3.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -417,7 +435,7 @@
     <!---------------- Skills section --------------->
     <section id="skills" class="skills">
       <div class="main-text">
-        <span>programming and other technical</span>
+        <span>programming and other tech stacks</span>
         <h2>My Skills</h2>
       </div>
 
@@ -703,6 +721,12 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
