@@ -1,6 +1,3 @@
-// Disable scrolling
-disableScroll();
-
 let tl = gsap.timeline();
 
 tl.fromTo(
@@ -35,9 +32,6 @@ window.addEventListener("load", () => {
   loaderContainer.addEventListener("animationend", () => {
     console.log("Animation ended");
     document.body.removeChild(loaderContainer);
-
-    // reset normal scroll after page load
-    enableScroll();
   });
 });
 
@@ -66,19 +60,3 @@ tl.from(".btn-box", {
   opacity: 0,
   duration: 1.5,
 });
-
-// Function to prevent scrolling while loading
-function disableScroll() {
-  // Get the current page scroll position
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
-
-  // Disable scrolling by setting the onscroll event handler
-  window.onscroll = function () {
-    window.scrollTo(scrollLeft, scrollTop);
-  };
-}
-
-function enableScroll() {
-  window.onscroll = null;
-}
