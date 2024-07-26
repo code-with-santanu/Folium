@@ -22,9 +22,9 @@ gsap.from(".about-content p span", {
   scrollTrigger: {
     trigger: ".about-content p",
     scroller: "body",
-    // markers: true,  // dev tools
-    start: "top 56%",
-    end: "top 28%",
+    // markers: true, // dev tools
+    start: "top 60%",
+    end: "top 26%",
     scrub: 4,
   },
 });

@@ -210,7 +210,7 @@
 .read-more {
   width: 80%;
   position: absolute;
-  background: var(--bg-color);
+  background: var(--bg-gradient);
   padding: 2rem;
   /* margin-top: 5rem; */
   display: none;
@@ -258,7 +258,7 @@
   width: 30px;
 
   background: var(--hover-color);
-  border-radius: 50%;
+  border-radius: 40%;
   display: flex;
   position: absolute;
   top: 5px;
