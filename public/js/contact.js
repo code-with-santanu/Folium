@@ -5,9 +5,9 @@ gsap.from("form div", {
   scrollTrigger: {
     trigger: "form div",
     scroller: "body",
-    // markers: true, // dev tools
+    markers: true, // dev tools
     start: "top 65%",
-    end: "top 30%",
+    end: "top 50%",
     scrub: 4,
   },
 });
