@@ -14,6 +14,10 @@ footer span {
   font-family: "Lobster", cursive;
 }
 
+footer div {
+  color: #708090;
+}
+
 footer a {
   display: inline-flex;
   justify-content: center;
