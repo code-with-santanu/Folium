@@ -7,7 +7,7 @@ sktl.from(".skill-left", {
   scrollTrigger: {
     trigger: ".skill-left ",
     scroller: "body",
-    markers: true, // dev tools
+    // markers: true, // dev tools
     start: "top 80%",
     end: "top 30%",
     scrub: 4,
@@ -21,7 +21,7 @@ gsap.from(".skill-right .skill-right-sub", {
   scrollTrigger: {
     trigger: ".skill-right .skill-right-sub",
     scroller: "body",
-    markers: true, // dev tools
+    // markers: true, // dev tools
     start: "top 80%",
     end: "top 30%",
     scrub: 4,
