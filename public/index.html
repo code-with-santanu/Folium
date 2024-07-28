@@ -494,6 +494,7 @@
               <div><img src="/img/icons/jdbc.png" alt="" />Jdbc</div>
               <div><img src="/img/icons/mongodb.png" alt="" />Mongodb</div>
               <div><img src="/img/icons/mysql.png" alt="" />MySql</div>
+              <div><img src="/img/icons/maven.png" alt="" />Maven</div>
 
               <!-- <div><img src="/img/icons/javafx.png" alt="" />JavaFx</div> -->
             </div>
@@ -509,7 +510,7 @@
             </div>
           </div>
           <div class="skill-right-sub">
-            <h3>Cloud & DevOps</h3>
+            <h3>Cloud, DevOps & Others</h3>
             <div class="all-icons">
               <div><img src="/img/icons/git.png" alt="" />Git</div>
               <div><img src="/img/icons/github.png" alt="" />Github</div>
@@ -541,65 +542,99 @@
       <div class="container">
         <div class="filter-button">
           <button class="btn" data-filter="all">All</button>
-          <button class="btn" data-filter=".project">Project</button>
+          <button class="btn" data-filter=".project">Projects</button>
           <button class="btn" data-filter=".cert">Certification</button>
-          <button class="btn" data-filter=".web">Web App</button>
           <button class="btn" data-filter=".more">More</button>
         </div>
 
         <div class="portfolio-gallery">
           <div class="port-box mix project">
             <div class="port-image">
-              <img src="/img/portfolioImg/images1.jpg" alt="" />
+              <img src="/img/portfolioImg/loadBalancer.jpg" alt="" />
             </div>
 
             <div class="port-content">
-              <h3>Brick-Breaker Game</h3>
+              <h3>LoadBalancer Microservice</h3>
               <p>
-                This is a simple game that's built using Java GUI. Visit to get
-                more info..
+                A server side load-balancer microservice that distributes
+                network traffic dynamically across resources
               </p>
-              <a
-                href="https://github.com/code-with-santanu/Brick_Breaker_Game"
-                target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <div class="port-links">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://github.com/code-with-santanu/LoadBalancer_Microservice"
+                  ><i class="fa fa-github" id="github"></i
+                ></a>
+                <a
+                  href="https://hub.docker.com/r/santanupal/loadbalancer"
+                  target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
 
           <div class="port-box mix project">
             <div class="port-image">
-              <img src="/img/portfolioImg/images2.jpg" alt="" />
+              <img src="/img/portfolioImg/authSys.png" alt="" />
             </div>
 
             <div class="port-content">
-              <h3>Snake Feeder Game</h3>
+              <h3>Authentication System</h3>
               <p>
-                This is a simple game that's built using Java GUI. Visit to get
-                more info..
+                An authentication system to signup & signin users in app supporting Oauth2 & other funtionalities using Spring Boot 
               </p>
-              <a
-                href="https://github.com/code-with-santanu/Snake_Feeder_Game"
-                target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <div class="port-links">
+                <a
+                  href="https://github.com/code-with-santanu/AuthenticationSystem"
+                  target="_blank"
+                  ><i class="fa fa-github" id="github"></i
+                ></i
+                ></a>
+                <a
+                  href="https://authapp-santanu.vercel.app/"
+                  target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
 
-          <div class="port-box mix project web">
+          <div class="port-box mix project">
             <div class="port-image">
-              <img src="/img/portfolioImg/images3.jpg" alt="" />
+              <img src="/img/portfolioImg/folium.png" alt="" />
             </div>
 
             <div class="port-content">
-              <h3>Portfolio Website</h3>
+              <h3>Folium</h3>
               <p>
-                This is my personal portfolio web app using html, css and
+                This is my personal portfolio website using html5, css3 and
                 javascript.
               </p>
-              <a href="#" target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <div class="port-links">
+                <a href="#" target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-box mix project">
+            <div class="port-image">
+              <img src="/img/portfolioImg/ssApp.png" alt="" />
+            </div>
+
+            <div class="port-content">
+              <h3>Screenshot App</h3>
+              <p>
+                A desktop screenshot application with both CLI and GUI version using Python
+              </p>
+              <div class="port-links">
+                <a href="https://github.com/code-with-santanu/Screenshot-App" target="_blank"
+                  ><i class="fa fa-github" id="github"></i
+                ></a>
+              </div>
             </div>
           </div>
 
@@ -610,12 +645,14 @@
 
             <div class="port-content">
               <h3>Cloud Certification</h3>
-              <p>visit to see the credentials</p>
-              <a
-                href="https://www.credential.net/45db72ed-6f45-45c7-9572-6e6d02a2ab7d"
-                target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <p>Visit to see the credentials</p>
+              <div class="port-links">
+                <a
+                  href="https://www.credential.net/45db72ed-6f45-45c7-9572-6e6d02a2ab7d"
+                  target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
 
@@ -625,15 +662,15 @@
             </div>
 
             <div class="port-content">
-              <h3>Google Cloud Platform</h3>
-              <p></p>
-              <a
-                href="https://www.cloudskillsboost.google/public_profiles/76e3539b-3c6a-412e-bbe4-3e50e0de2ed7
-
-"
-                target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <h3>Google Cloud Profile</h3>
+              <p>Check the skill badges I have earned</p>
+              <div class="port-links">
+                <a
+                  href="https://www.cloudskillsboost.google/public_profiles/76e3539b-3c6a-412e-bbe4-3e50e0de2ed7"
+                  target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
 
@@ -645,25 +682,36 @@
             <div class="port-content">
               <h3>My LinkedIn</h3>
               <p>My other works</p>
-              <a
-                href="https://www.linkedin.com/in/santanu-pal-62778922a"
-                target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <div class="port-links">
+                <a
+                  href="https://www.linkedin.com/in/santanu-pal-62778922a"
+                  target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
 
           <div class="port-box mix more">
             <div class="port-image">
-              <img src="/img/portfolioImg/github.png" alt="" />
+              <img
+                src="https://streak-stats.demolab.com?user=code-with-santanu&theme=vision-friendly-dark"
+                alt="code-with-santanu"
+              />
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=code-with-santanu&rank_icon=github&show_icons=true&include_all_commits=true&count_private=true&theme=vision-friendly-dark&hide_border=false&locale=en"
+                alt="code-with-santanu"
+              />
             </div>
 
             <div class="port-content">
               <h3>My Github</h3>
-              <p>visit to see what I do</p>
-              <a href="https://github.com/code-with-santanu/" target="_blank"
-                ><i class="bx bx-link-external"></i
-              ></a>
+              <p>Visit to see my current ongoing projects and related stuffs</p>
+              <div class="port-links">
+                <a href="https://github.com/code-with-santanu/" target="_blank"
+                  ><i class="bx bx-link-external"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -712,7 +760,7 @@
         Made with ❤️ by
         <span>SantanuPal</span>
       </p>
-      <div>Copyright &copy;2023</div>
+      <div>Copyright &copy; 2023</div>
       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
     </footer>
 
