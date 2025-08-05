@@ -240,7 +240,7 @@ button:active {
 
 .image {
   text-align: center;
-  filter: contrast(120%);
+  filter: contrast(110%);
 }
 
 .image img:nth-child(1) {
